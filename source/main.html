@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Section</title>
+    <link rel="stylesheet" type="text/css" href="./res/css/material-components-web.min.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/icon.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/style.css">
+    <script src="./res/js/material-components-web.min.js"></script>
+
+  </head>
+  <body class="mdc-typography">
+
+
+    <div id="root">
+      <div class="drawer-frame-root">
+        <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+          <div class="mdc-drawer__header">
+            <h3 class="mdc-drawer__title">Mail</h3>
+            <h6 class="mdc-drawer__subtitle">email@material.io</h6>
+          </div>
+          <div class="mdc-drawer__content">
+            <nav class="mdc-list">
+              <a class="mdc-list-item mdc-list-item--activated" href="#" tabindex="0" aria-selected="true">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+                Inbox
+              </a>
+              <a class="mdc-list-item" href="#" tabindex="-1">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>
+                Star
+              </a>
+              <a class="mdc-list-item" href="#" tabindex="-1">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+                Sent Mail
+              </a>
+              <a class="mdc-list-item" href="#" tabindex="-1">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+                Drafts
+              </a>
+              <hr class="mdc-list-divider">
+              <h6 class="mdc-list-group__subheader">Labels</h6>
+              <a class="mdc-list-item" href="#" tabindex="-1">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+                Family
+              </a>
+              <a class="mdc-list-item" href="#" tabindex="-1">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+                Friends
+              </a>
+              <a class="mdc-list-item" href="#" tabindex="-1">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+                Work
+              </a>
+              <hr class="mdc-list-divider">
+              <a class="mdc-list-item" href="#" tabindex="-1">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+                Settings
+              </a>
+              <a class="mdc-list-item" href="#" tabindex="-1">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">announcement</i>Help &amp; feedback
+              </a>
+            </nav>
+          </div>
+        </aside>
+        <div class="mdc-drawer-app-content">
+          <header class="mdc-top-app-bar drawer-top-app-bar--dense">
+            <div class="mdc-top-app-bar__row">
+              <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="mdc-icon-button material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;">
+                    menu
+                </button>
+                <span class="mdc-top-app-bar__title">Section Computer</span>
+              </section>
+            </div>
+          </header>
+          <div class="drawer-main-content">
+            <div class="mdc-top-app-bar--fixed-adjust"></div>
+
+
+              <div class="mdc-text-field">
+                <input type="number" step="0.01" id="input_1" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="input_1">Depth [mm]</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+
+              <div class="mdc-text-field">
+                <input type="number" step="0.01" id="input_2" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="input_2">Flange Width [mm]</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+
+              <div class="mdc-text-field">
+                <input type="number" step="0.01" id="input_3" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="input_3">Web Thickness [mm]</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+
+              <div class="mdc-text-field">
+                <input type="number" step="0.01" id="input_4" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="input_4">Flange Thickness [mm]</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+
+              <div class="mdc-text-field">
+                <input type="number" step="0.01" id="input_5" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="input_5">Root Radius [mm]</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+              <br>
+              <button class="demo-button mdc-button mdc-button--raised mdc-ripple-upgraded" id="compute">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">Compute</span>
+              </button>
+              <br><br> &nbsp; &nbsp;
+              <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400">
+                <g id="viewer" transform="matrix(1 0 0 1 0 0)"> </g>
+              </svg>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./res/js/app.js"></script>
+  </body>
+</html>
